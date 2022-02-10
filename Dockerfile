@@ -4,4 +4,6 @@ RUN apk --update add redis
 
 COPY redis.conf .
 
-ENTRYPOINT ["redis-server", "./redis.conf"]
+ENTRYPOINT "redis-server"]
+CMD ["./redis.conf"]
+
